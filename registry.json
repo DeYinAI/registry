@@ -1,0 +1,13 @@
+{
+  "$comment": "Official Deyin plugin catalog. Deyin fetches this file from raw.githubusercontent.com/DeYinAI/registry/main/registry.json and shows the entries in Settings -> Plugins.",
+  "version": 1,
+  "plugins": [
+    {
+      "name": "starter-pack",
+      "description": "Curated starter skills: conventional commits and README writing.",
+      "repo": "DeYinAI/registry/plugins/starter-pack",
+      "version": "0.1.0",
+      "kind": "plugin"
+    }
+  ]
+}

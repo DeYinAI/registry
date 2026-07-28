@@ -1,0 +1,7 @@
+{
+  "name": "starter-pack",
+  "description": "Curated starter skills: conventional commits and README writing.",
+  "version": "0.1.0",
+  "author": "DeYinAI",
+  "keywords": ["skills", "git", "docs"]
+}

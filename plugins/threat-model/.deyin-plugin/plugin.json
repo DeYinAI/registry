@@ -1,0 +1,14 @@
+{
+  "name": "threat-model",
+  "version": "1.0.0",
+  "description": "Lightweight threat modeling skill (no MCP required).",
+  "interface": {
+    "displayName": "Threat Model",
+    "shortDescription": "STRIDE-style threat models for features and repos.",
+    "longDescription": "Skills-only plugin for security-minded design reviews. Does not run scans — pair with the bundled Security plugin for automated findings.",
+    "category": "Security",
+    "capabilities": ["Read"],
+    "brandColor": "#F59E0B",
+    "defaultPrompt": ["Threat model the authentication flow", "What are the top security risks in this API?"]
+  }
+}

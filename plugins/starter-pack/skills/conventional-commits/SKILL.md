@@ -1,61 +1,43 @@
 ---
 name: conventional-commits
-description: Write Conventional Commits messages from staged or described changes. Use when committing, when the user mentions commit messages, or when a project enforces the conventional format.
+description: Write conventional commit messages. Use when staging changes, writing git commits, or the user asks for commit message help.
 ---
 
-# Conventional Commits
+# Conventional commits
 
-Produce commit messages in the Conventional Commits format: `type(scope): subject`.
-
-## 1. Understand the change
-
-- Run `git status` and `git diff --staged` (or `git diff` when nothing is staged).
-- Identify the primary intent — one commit should carry one logical change. If the diff
-  mixes unrelated changes, propose splitting before writing a message.
-
-## 2. Choose the type
-
-| Type | Use for |
-| --- | --- |
-| feat | New user-facing capability |
-| fix | Bug fix |
-| refactor | Restructuring without behavior change |
-| perf | Performance improvement |
-| docs | Documentation only |
-| test | Tests only |
-| build | Build system, dependencies |
-| ci | CI configuration |
-| chore | Maintenance that fits nothing above |
-
-Breaking changes: append `!` after the type/scope and add a `BREAKING CHANGE:` footer
-explaining the migration.
-
-## 3. Write the message
-
-- Subject: imperative mood, no trailing period, at most ~70 characters, says WHY when
-  the what is obvious from the diff.
-- Scope: the touched module or area when the repo uses scopes (check `git log --oneline -15`
-  for the house style first — match it).
-- Body (optional): what changed and why, wrapped at ~72 columns. Skip restating the diff.
+Follow [Conventional Commits](https://www.conventionalcommits.org/) format:
 
 ```
-feat(settings): cache the model catalog for one week
+<type>(<optional scope>): <short summary>
 
-Model lists rarely change and the /models call added ~800ms to every
-composer open. Serve the cached list and refresh on demand.
+<optional body>
+
+<optional footer>
 ```
 
-## 4. Commit
+## Types
 
-Stage only the intended files, then commit with a heredoc so formatting survives:
+- **feat** — new feature
+- **fix** — bug fix
+- **docs** — documentation only
+- **style** — formatting, no logic change
+- **refactor** — code change that is neither feat nor fix
+- **perf** — performance improvement
+- **test** — adding or correcting tests
+- **chore** — maintenance (deps, CI, tooling)
 
-```bash
-git commit -m "$(cat <<'EOF'
-type(scope): subject
+## Workflow
 
-Optional body.
-EOF
-)"
-```
+1. Run `git status` and `git diff` (staged and unstaged).
+2. Identify the primary intent of the change set.
+3. Pick the narrowest correct type and an optional scope (package or area name).
+4. Write an imperative summary under 72 characters (e.g. "add user auth middleware").
+5. Add a body when the *why* is not obvious from the diff.
 
-Verify with `git log -1 --stat` and report the subject line.
+## Examples
+
+- `feat(auth): add device-code OAuth flow`
+- `fix(indexer): skip binary files during chunking`
+- `docs: update plugin install instructions`
+
+Do not mention tool names in the commit message unless the user asks.

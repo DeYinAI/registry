@@ -1,0 +1,14 @@
+{
+  "name": "docs-lookup",
+  "version": "1.0.0",
+  "description": "Library documentation lookup via Context7 and Fetch MCP.",
+  "interface": {
+    "displayName": "Docs Lookup",
+    "shortDescription": "Up-to-date library docs and web page fetch.",
+    "longDescription": "Bundles Context7 for library documentation and Fetch MCP for retrieving web pages as markdown. No API keys required.",
+    "category": "Developer Tools",
+    "capabilities": ["Read"],
+    "brandColor": "#0EA5E9",
+    "defaultPrompt": ["Look up the latest Next.js App Router docs", "Fetch and summarize this documentation URL"]
+  }
+}

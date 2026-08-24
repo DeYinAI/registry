@@ -1,13 +1,94 @@
 {
-  "$comment": "Official Deyin plugin catalog. Deyin fetches this file from raw.githubusercontent.com/DeYinAI/registry/main/registry.json and shows the entries in Settings -> Plugins.",
+  "$comment": "Official Deyin plugin catalog. Deyin fetches this file from raw.githubusercontent.com/DeYinAI/registry/main/registry.json.",
   "version": 1,
   "plugins": [
     {
       "name": "starter-pack",
       "description": "Curated starter skills: conventional commits and README writing.",
       "repo": "DeYinAI/registry/plugins/starter-pack",
-      "version": "0.1.0",
-      "kind": "plugin"
+      "kind": "plugin",
+      "interface": {
+        "displayName": "Starter Pack",
+        "category": "Guides",
+        "brandColor": "#6366F1"
+      }
+    },
+    {
+      "name": "conventional-commits",
+      "description": "Write conventional commit messages with a guided skill and /commit plugin command.",
+      "repo": "DeYinAI/registry/plugins/conventional-commits",
+      "kind": "plugin",
+      "interface": {
+        "displayName": "Conventional Commits",
+        "category": "Developer Tools",
+        "brandColor": "#10B981"
+      }
+    },
+    {
+      "name": "postgres-dev",
+      "description": "Query and inspect PostgreSQL with guided skills and MCP.",
+      "repo": "DeYinAI/registry/plugins/postgres-dev",
+      "kind": "plugin",
+      "interface": {
+        "displayName": "PostgreSQL Dev",
+        "category": "Developer Tools",
+        "brandColor": "#336791"
+      }
+    },
+    {
+      "name": "playwright-testing",
+      "description": "Browser automation and E2E testing workflows with Playwright MCP.",
+      "repo": "DeYinAI/registry/plugins/playwright-testing",
+      "kind": "plugin",
+      "interface": {
+        "displayName": "Playwright Testing",
+        "category": "Developer Tools",
+        "brandColor": "#2EAD33"
+      }
+    },
+    {
+      "name": "github-dev",
+      "description": "Work with GitHub repos, issues, and pull requests via MCP.",
+      "repo": "DeYinAI/registry/plugins/github-dev",
+      "kind": "plugin",
+      "interface": {
+        "displayName": "GitHub Dev",
+        "category": "Developer Tools",
+        "brandColor": "#24292F"
+      }
+    },
+    {
+      "name": "docs-lookup",
+      "description": "Look up up-to-date library documentation with Context7 and Fetch MCP.",
+      "repo": "DeYinAI/registry/plugins/docs-lookup",
+      "kind": "plugin",
+      "interface": {
+        "displayName": "Docs Lookup",
+        "category": "Developer Tools",
+        "brandColor": "#0EA5E9"
+      }
+    },
+    {
+      "name": "threat-model",
+      "description": "Produce lightweight threat models for features and repos (skills-only).",
+      "repo": "DeYinAI/registry/plugins/threat-model",
+      "kind": "plugin",
+      "interface": {
+        "displayName": "Threat Model",
+        "category": "Security",
+        "brandColor": "#F59E0B"
+      }
+    },
+    {
+      "name": "cloudflare-workers",
+      "description": "Develop and debug Cloudflare Workers with bindings MCP guidance.",
+      "repo": "DeYinAI/registry/plugins/cloudflare-workers",
+      "kind": "plugin",
+      "interface": {
+        "displayName": "Cloudflare Workers",
+        "category": "Engineering",
+        "brandColor": "#F6821F"
+      }
     }
   ]
 }

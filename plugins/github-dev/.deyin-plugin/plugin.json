@@ -1,0 +1,15 @@
+{
+  "name": "github-dev",
+  "version": "1.0.0",
+  "description": "GitHub repos, issues, and pull requests via MCP.",
+  "variables": ["GITHUB_PERSONAL_ACCESS_TOKEN"],
+  "interface": {
+    "displayName": "GitHub Dev",
+    "shortDescription": "GitHub MCP for repos, issues, and PRs.",
+    "longDescription": "Connects the GitHub MCP server. Set a personal access token in plugin secrets, or install the GitHub server from Settings → MCP for OAuth.",
+    "category": "Developer Tools",
+    "capabilities": ["Read", "Write"],
+    "brandColor": "#24292F",
+    "defaultPrompt": ["Summarize open PRs on this repo", "Create an issue for this bug"]
+  }
+}

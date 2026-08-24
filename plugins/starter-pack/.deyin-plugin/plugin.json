@@ -1,7 +1,14 @@
 {
   "name": "starter-pack",
-  "description": "Curated starter skills: conventional commits and README writing.",
-  "version": "0.1.0",
-  "author": "DeYinAI",
-  "keywords": ["skills", "git", "docs"]
+  "version": "1.0.0",
+  "description": "Curated starter skills for new Deyin users.",
+  "interface": {
+    "displayName": "Starter Pack",
+    "shortDescription": "Conventional commits and README writing workflows.",
+    "longDescription": "Install this plugin to get two practical skills: writing conventional commit messages and drafting project READMEs.",
+    "category": "Guides",
+    "capabilities": ["Read", "Write"],
+    "brandColor": "#6366F1",
+    "defaultPrompt": ["Help me write a conventional commit message", "Draft a README for this project"]
+  }
 }

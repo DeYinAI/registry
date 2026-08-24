@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deyin.ai/schemas/registry.json",
+  "title": "DeYinAI Plugin Registry",
+  "type": "object",
+  "required": ["plugins"],
+  "properties": {
+    "plugins": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "description", "repo"],
+        "properties": {
+          "name": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+          "description": { "type": "string", "minLength": 8 },
+          "repo": { "type": "string", "pattern": "^(DeYinAI/registry/plugins/[a-z0-9._-]+|[\\w.-]+/[\\w.-]+(?:@[\\w./-]+)?(?:/[\\w./-]+)?)$" },
+          "version": { "type": "string" },
+          "kind": { "enum": ["plugin", "skill", "mcp"] },
+          "interface": {
+            "type": "object",
+            "properties": {
+              "displayName": { "type": "string" },
+              "category": { "type": "string" },
+              "brandColor": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+              "logo": { "type": "string" }
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,14 @@
+{
+  "name": "cloudflare-workers",
+  "version": "1.0.0",
+  "description": "Cloudflare Workers development with bindings MCP.",
+  "interface": {
+    "displayName": "Cloudflare Workers",
+    "shortDescription": "Workers, KV, R2, D1 bindings via MCP.",
+    "longDescription": "Connects Cloudflare Bindings MCP. Complete OAuth via Settings → MCP if the bundled HTTP server requires authentication.",
+    "category": "Engineering",
+    "capabilities": ["Read", "Write"],
+    "brandColor": "#F6821F",
+    "defaultPrompt": ["List my Workers bindings", "Help debug this wrangler.toml setup"]
+  }
+}

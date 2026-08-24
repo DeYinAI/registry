@@ -1,0 +1,14 @@
+{
+  "name": "conventional-commits",
+  "version": "1.0.0",
+  "description": "Conventional commit workflows with a slash command.",
+  "interface": {
+    "displayName": "Conventional Commits",
+    "shortDescription": "Guided conventional commits and a /conventional-commit command.",
+    "longDescription": "Teaches the agent conventional commit format and adds a /conventional-commit slash command for quick commit message drafting.",
+    "category": "Developer Tools",
+    "capabilities": ["Read", "Write"],
+    "brandColor": "#10B981",
+    "defaultPrompt": ["Write a conventional commit message for my staged changes"]
+  }
+}

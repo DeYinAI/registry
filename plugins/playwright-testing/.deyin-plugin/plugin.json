@@ -1,0 +1,14 @@
+{
+  "name": "playwright-testing",
+  "version": "1.0.0",
+  "description": "E2E testing with Playwright MCP.",
+  "interface": {
+    "displayName": "Playwright Testing",
+    "shortDescription": "Browser automation and E2E test workflows.",
+    "longDescription": "Spawns the official Playwright MCP server for browser automation, plus skills and slash commands for writing and running tests.",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read"],
+    "brandColor": "#2EAD33",
+    "defaultPrompt": ["Write a Playwright test for the login flow", "Open the app in a browser and take a snapshot"]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "cloudflare-bindings": {
+      "url": "https://bindings.mcp.cloudflare.com/mcp"
+    }
+  }
+}

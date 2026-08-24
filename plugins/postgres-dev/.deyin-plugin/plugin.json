@@ -1,0 +1,15 @@
+{
+  "name": "postgres-dev",
+  "version": "1.0.0",
+  "description": "PostgreSQL development with MCP query tools.",
+  "variables": ["DATABASE_URL"],
+  "interface": {
+    "displayName": "PostgreSQL Dev",
+    "shortDescription": "Query and inspect Postgres via MCP.",
+    "longDescription": "Connects the reference Postgres MCP server and teaches safe read-only exploration patterns. Set DATABASE_URL in plugin secrets before use.",
+    "category": "Developer Tools",
+    "capabilities": ["Read"],
+    "brandColor": "#336791",
+    "defaultPrompt": ["Inspect the database schema", "Run a read-only query against Postgres"]
+  }
+}

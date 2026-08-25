@@ -1,0 +1,15 @@
+{
+  "name": "local-vision",
+  "version": "1.0.0",
+  "description": "Describe attached images on-device with Ollama moondream (~1.7 GB).",
+  "variables": ["OLLAMA_BASE_URL", "OLLAMA_VISION_MODEL"],
+  "interface": {
+    "displayName": "Local Vision",
+    "shortDescription": "On-device image descriptions via Ollama (moondream, ~1.7 GB).",
+    "longDescription": "Describe composer attachments locally before they reach your chat model. Install Ollama, run `ollama pull moondream`, enable this plugin. Optional variables: OLLAMA_BASE_URL (default http://127.0.0.1:11434), OLLAMA_VISION_MODEL (default moondream).",
+    "category": "Engineering",
+    "capabilities": ["Read"],
+    "brandColor": "#F97316",
+    "defaultPrompt": ["What's in this screenshot?", "Describe the UI in this image"]
+  }
+}

@@ -69,6 +69,17 @@
       }
     },
     {
+      "name": "local-vision",
+      "description": "Describe attached images on-device with Ollama moondream (~1.7 GB).",
+      "repo": "DeYinAI/registry/plugins/local-vision",
+      "kind": "plugin",
+      "interface": {
+        "displayName": "Local Vision",
+        "category": "Engineering",
+        "brandColor": "#F97316"
+      }
+    },
+    {
       "name": "threat-model",
       "description": "Produce lightweight threat models for features and repos (skills-only).",
       "repo": "DeYinAI/registry/plugins/threat-model",
